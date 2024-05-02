@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{884033D9-22F0-4267-91C5-8E5CA86E339C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.34714.143</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;winmm.lib;comctl32.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)win32.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)win32.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;winmm.lib;comctl32.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)win32.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Image Include="directx.ico" />
+    <Image Include="Resources\directx.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="win32.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Moteur\Bouton.cpp" />
+    <ClCompile Include="Moteur\Camera.cpp" />
+    <ClCompile Include="Moteur\Clavier.cpp" />
+    <ClCompile Include="Moteur\EnvMapping.cpp" />
+    <ClCompile Include="Moteur\EnvMiroir.cpp" />
+    <ClCompile Include="Moteur\Lumiere.cpp" />
+    <ClCompile Include="Moteur\main.cpp" />
+    <ClCompile Include="Moteur\Materielle.cpp" />
+    <ClCompile Include="Moteur\Model.cpp" />
+    <ClCompile Include="Moteur\Moteur.cpp" />
+    <ClCompile Include="Moteur\Moteur3D.cpp" />
+    <ClCompile Include="Moteur\Peripherique.cpp" />
+    <ClCompile Include="Moteur\Scene.cpp" />
+    <ClCompile Include="Moteur\Souris.cpp" />
+    <ClCompile Include="Outils\Console.cpp" />
+    <ClCompile Include="Outils\ImageRAW.cpp" />
+    <ClCompile Include="Outils\ImageTGA.cpp" />
+    <ClCompile Include="Outils\MesureTemps.cpp" />
+    <ClCompile Include="Outils\Sobol.cpp" />
+    <ClCompile Include="Scene\ModelEau.cpp" />
+    <ClCompile Include="Scene\ModelRoche.cpp" />
+    <ClCompile Include="Scene\ModelSol.cpp" />
+    <ClCompile Include="Scene\ModelVegetation.cpp" />
+    <ClCompile Include="Scene\SceneConfig.cpp" />
+    <ClCompile Include="Scene\SkyBox.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Moteur\Bouton.h" />
+    <ClInclude Include="Moteur\Camera.h" />
+    <ClInclude Include="Moteur\Clavier.h" />
+    <ClInclude Include="Moteur\EnvMapping.h" />
+    <ClInclude Include="Moteur\EnvMiroir.h" />
+    <ClInclude Include="Moteur\Lumiere.h" />
+    <ClInclude Include="Moteur\Materielle.h" />
+    <ClInclude Include="Moteur\Model.h" />
+    <ClInclude Include="Moteur\Moteur.h" />
+    <ClInclude Include="Moteur\Moteur3D.h" />
+    <ClInclude Include="Moteur\Peripherique.h" />
+    <ClInclude Include="Moteur\resource.h" />
+    <ClInclude Include="Moteur\Scene.h" />
+    <ClInclude Include="Moteur\Souris.h" />
+    <ClInclude Include="Moteur\VariableGlobale.h" />
+    <ClInclude Include="Outils\Console.h" />
+    <ClInclude Include="Outils\ImageRAW.h" />
+    <ClInclude Include="Outils\ImageTGA.h" />
+    <ClInclude Include="Outils\MesureTemps.h" />
+    <ClInclude Include="Outils\Sobol.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Scene\ModelEau.h" />
+    <ClInclude Include="Scene\ModelRoche.h" />
+    <ClInclude Include="Scene\ModelSol.h" />
+    <ClInclude Include="Scene\ModelVegetation.h" />
+    <ClInclude Include="Scene\SceneConfig.h" />
+    <ClInclude Include="Scene\SkyBox.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

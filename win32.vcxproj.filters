@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="Outils">
+      <UniqueIdentifier>{dcefdd1c-8f1e-45b1-86c5-fefa6ee2a574}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Moteur">
+      <UniqueIdentifier>{3bd94c7f-1d34-49b7-a07c-5719a47d43a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{8fcda1f7-c925-4bba-bed6-ed34e5b4cc10}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\directx.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="directx.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="win32.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Outils\Console.cpp">
+      <Filter>Outils</Filter>
+    </ClCompile>
+    <ClCompile Include="Outils\ImageRAW.cpp">
+      <Filter>Outils</Filter>
+    </ClCompile>
+    <ClCompile Include="Outils\ImageTGA.cpp">
+      <Filter>Outils</Filter>
+    </ClCompile>
+    <ClCompile Include="Outils\MesureTemps.cpp">
+      <Filter>Outils</Filter>
+    </ClCompile>
+    <ClCompile Include="Outils\Sobol.cpp">
+      <Filter>Outils</Filter>
+    </ClCompile>
+    <ClCompile Include="Moteur\Bouton.cpp">
+      <Filter>Moteur</Filter>
+    </ClCompile>
+    <ClCompile Include="Moteur\Camera.cpp">
+      <Filter>Moteur</Filter>
+    </ClCompile>
+    <ClCompile Include="Moteur\Clavier.cpp">
+      <Filter>Moteur</Filter>
+    </ClCompile>
+    <ClCompile Include="Moteur\EnvMapping.cpp">
+      <Filter>Moteur</Filter>
+    </ClCompile>
+    <ClCompile Include="Moteur\EnvMiroir.cpp">
+      <Filter>Moteur</Filter>
+    </ClCompile>
+    <ClCompile Include="Moteur\Lumiere.cpp">
+      <Filter>Moteur</Filter>
+    </ClCompile>
+    <ClCompile Include="Moteur\main.cpp">
+      <Filter>Moteur</Filter>
+    </ClCompile>
+    <ClCompile Include="Moteur\Materielle.cpp">
+      <Filter>Moteur</Filter>
+    </ClCompile>
+    <ClCompile Include="Moteur\Model.cpp">
+      <Filter>Moteur</Filter>
+    </ClCompile>
+    <ClCompile Include="Moteur\Moteur.cpp">
+      <Filter>Moteur</Filter>
+    </ClCompile>
+    <ClCompile Include="Moteur\Moteur3D.cpp">
+      <Filter>Moteur</Filter>
+    </ClCompile>
+    <ClCompile Include="Moteur\Peripherique.cpp">
+      <Filter>Moteur</Filter>
+    </ClCompile>
+    <ClCompile Include="Moteur\Scene.cpp">
+      <Filter>Moteur</Filter>
+    </ClCompile>
+    <ClCompile Include="Moteur\Souris.cpp">
+      <Filter>Moteur</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\ModelEau.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\ModelRoche.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\ModelSol.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\ModelVegetation.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneConfig.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SkyBox.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Outils\Console.h">
+      <Filter>Outils</Filter>
+    </ClInclude>
+    <ClInclude Include="Outils\ImageRAW.h">
+      <Filter>Outils</Filter>
+    </ClInclude>
+    <ClInclude Include="Outils\ImageTGA.h">
+      <Filter>Outils</Filter>
+    </ClInclude>
+    <ClInclude Include="Outils\MesureTemps.h">
+      <Filter>Outils</Filter>
+    </ClInclude>
+    <ClInclude Include="Outils\Sobol.h">
+      <Filter>Outils</Filter>
+    </ClInclude>
+    <ClInclude Include="Moteur\Bouton.h">
+      <Filter>Moteur</Filter>
+    </ClInclude>
+    <ClInclude Include="Moteur\Camera.h">
+      <Filter>Moteur</Filter>
+    </ClInclude>
+    <ClInclude Include="Moteur\Clavier.h">
+      <Filter>Moteur</Filter>
+    </ClInclude>
+    <ClInclude Include="Moteur\EnvMapping.h">
+      <Filter>Moteur</Filter>
+    </ClInclude>
+    <ClInclude Include="Moteur\EnvMiroir.h">
+      <Filter>Moteur</Filter>
+    </ClInclude>
+    <ClInclude Include="Moteur\Lumiere.h">
+      <Filter>Moteur</Filter>
+    </ClInclude>
+    <ClInclude Include="Moteur\Materielle.h">
+      <Filter>Moteur</Filter>
+    </ClInclude>
+    <ClInclude Include="Moteur\Model.h">
+      <Filter>Moteur</Filter>
+    </ClInclude>
+    <ClInclude Include="Moteur\Moteur.h">
+      <Filter>Moteur</Filter>
+    </ClInclude>
+    <ClInclude Include="Moteur\Moteur3D.h">
+      <Filter>Moteur</Filter>
+    </ClInclude>
+    <ClInclude Include="Moteur\Peripherique.h">
+      <Filter>Moteur</Filter>
+    </ClInclude>
+    <ClInclude Include="Moteur\resource.h">
+      <Filter>Moteur</Filter>
+    </ClInclude>
+    <ClInclude Include="Moteur\Scene.h">
+      <Filter>Moteur</Filter>
+    </ClInclude>
+    <ClInclude Include="Moteur\Souris.h">
+      <Filter>Moteur</Filter>
+    </ClInclude>
+    <ClInclude Include="Moteur\VariableGlobale.h">
+      <Filter>Moteur</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\ModelEau.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\ModelRoche.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\ModelSol.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\ModelVegetation.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneConfig.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SkyBox.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+</Project>
